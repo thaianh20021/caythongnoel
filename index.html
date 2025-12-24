@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Christmas Hand</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MediaPipe Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Hidden video element for MediaPipe input -->
+        <video class="input_video" style="display: none;"></video>
+        
+        <!-- Main canvas for rendering video feed + magic effects -->
+        <canvas class="output_canvas"></canvas>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Đang tải Magic AI...</p>
+        </div>
+
+        <div class="controls">
+            <h1>✨ Christmas Magic Hand ✨</h1>
+            <p>Đưa tay lên trước camera để tạo phép màu!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
